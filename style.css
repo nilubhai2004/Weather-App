@@ -1,0 +1,198 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.weather-app {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.dark-mode .weather-app {
+  background-color: #343a40;
+}
+
+.app-title {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.dark-mode .app-title {
+  color: #6ea8fe;
+}
+
+.current-weather {
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+  color: white;
+  border: none;
+}
+
+.dark-mode .current-weather {
+  background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+}
+
+.weather-icon-lg {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.temp-display {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.feels-like {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.nav-tabs .nav-link.active {
+  font-weight: 600;
+}
+
+.placeholder-content {
+  padding: 40px 0;
+  color: rgba(255,255,255,0.8);
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.suggestions-container {
+  position: absolute;
+  z-index: 1000;
+  width: calc(100% - 120px);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 0 0 5px 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+}
+
+.dark-mode .suggestions-container {
+  background: #343a40;
+  border-color: #495057;
+}
+
+.suggestion-item {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dark-mode .suggestion-item:hover {
+  background-color: #495057;
+}
+
+/* Hourly forecast styles */
+.hourly-forecast {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.hourly-item {
+  min-width: 80px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode .hourly-item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Daily forecast styles */
+.daily-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.dark-mode .daily-item {
+  border-bottom-color: #495057;
+}
+
+/* Map styles */
+#weatherMap {
+  height: 300px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode #weatherMap {
+  background-color: #495057;
+}
+
+/* Alert styles */
+.alert-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.dark-mode .alert-item {
+  background-color: #332701;
+  color: #ffda6a;
+}
+
+/* Air quality styles */
+.aqi-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.aqi-good {
+  color: #28a745;
+}
+
+.aqi-moderate {
+  color: #ffc107;
+}
+
+.aqi-unhealthy {
+  color: #fd7e14;
+}
+
+.aqi-very-unhealthy {
+  color: #dc3545;
+}
+
+.aqi-hazardous {
+  color: #6f42c1;
+}
